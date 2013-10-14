@@ -1,7 +1,6 @@
 require 'sinatra'
 require 'sinatra/reloader' if development?
 require 'active_record'
-require 'pry'
 require_relative 'models/show_song'
 require_relative 'config/environments'
 
