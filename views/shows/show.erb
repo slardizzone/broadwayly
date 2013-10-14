@@ -1,0 +1,11 @@
+<div class="container">
+	<section>
+	  <h1><%= @show.title %></h1>
+	  <img src="<%= @show.img_url %>" width='400'>
+	  <h2>Composer: <%= @show.composer %></h2>
+	  <h2>Year: <%= @show.year %></h2>
+	  <a href="/shows/<%= @show.id %>/songs/new">Add a song to this show</a>
+	  <a href="/shows/<%= @show.id %>/songs">Views all songs</a>
+	</section>
+</div>
+

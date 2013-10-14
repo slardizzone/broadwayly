@@ -1,6 +1,7 @@
 create table shows (
 	id serial primary key, 
 	title varchar(50) not null, 
+	year varchar(4) not null,
 	composer varchar(50) not null, 
 	img_url varchar(400) not null
 );

@@ -1,0 +1,9 @@
+<div class="container">
+	<h1>Add Song to <%= @show.title %></h1>
+	<form method="POST" action="/shows/<%= @show.id %>/songs">
+		 <input value='<%= @song['title'] if @song %>' type='text' name='song[title]' placeholder="Title" />
+		 <input value='<%= @song['embed_url'] if @song %>' type='text' name='song[embed_url]' placeholder="URL" />
+		 <button>Submit</button>
+	</form>
+</div>
+

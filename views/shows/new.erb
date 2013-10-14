@@ -1,0 +1,10 @@
+<div class="container">
+	<h1>Add New Show</h1>
+	<form method="POST" action="/shows">
+		 <input value='<%= @show['title'] if @show %>' type='text' name='show[title]' placeholder='Title' />
+		 <input value='<%= @show['year'] if @show %>' type='text' name='show[year]' placeholder='Year' />
+		 <input value='<%= @show['composer'] if @show %>' type='text' name='show[composer]' placeholder='Composer'/>
+		 <input value='<%= @show['img_url'] if @show %>' type='text' name='show[img_url]' placeholder='Image' />
+		 <button>Submit</button>
+	</form>
+</div>
