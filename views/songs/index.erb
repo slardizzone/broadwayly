@@ -2,11 +2,10 @@
 	<h1>All Songs</h1>
 
 	<% @show.songs.each do |song| %>
-	<section>
-	    <a href="/shows/<%= @show.id %>/songs/<%= song.id %>"><%= song.title %></a>
-	    <iframe src="<%= song.embed_url%>" width='480' height='390'></iframe>
-	    <!-- <p><%= song.embed_url%></p> -->
-	</section>
+		<section>
+		    <a href="/shows/<%= @show.id %>/songs/<%= song.id %>"><%= song.title %></a>
+		</section>
+		<iframe src="<%= song.embed_url%>" width='480' height='390'></iframe>
 	<% end %>
 </div>
 
