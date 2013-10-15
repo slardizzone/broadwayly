@@ -1,2 +1,4 @@
-<p> <%= @song.title %> </p>
-<p> <%= @song.embed_url %> </p> 
+<div class="container">
+	<h2> <%= @song.title %> </h2>
+	<iframe src="<%= @song.embed_url%>" width='480' height='390'></iframe> 
+</div>
